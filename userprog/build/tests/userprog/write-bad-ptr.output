@@ -1,0 +1,30 @@
+Copying tests/userprog/write-bad-ptr into /tmp/iihTMFah0x.dsk...
+Copying ../../tests/userprog/sample.txt into /tmp/iihTMFah0x.dsk...
+Writing command line to /tmp/3zLuhdVsVu.dsk...
+qemu-system-i386 -hda /tmp/3zLuhdVsVu.dsk -hdb /tmp/9jCFu9Ne3Q.dsk -hdc /tmp/iihTMFah0x.dsk -m 4 -net none -monitor null -nographic
+Kernel command line: -q -f put write-bad-ptr put sample.txt run write-bad-ptr
+Pintos booting with 4,088 kB RAM...
+372 pages available in kernel pool.
+371 pages available in user pool.
+Calibrating timer...  419,020,800 loops/s.
+hd0:0: detected 153 sector (76 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 100 sector (50 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'write-bad-ptr' into the file system...
+Putting 'sample.txt' into the file system...
+Executing 'write-bad-ptr':
+(write-bad-ptr) begin
+(write-bad-ptr) open "sample.txt"
+write-bad-ptr: exit(-1)
+Execution of 'write-bad-ptr' complete.
+Timer: 61 ticks
+Thread: 32 idle ticks, 29 kernel ticks, 0 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 90 reads, 210 writes
+hd1:0: 100 reads, 0 writes
+Console: 905 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...
